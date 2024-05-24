@@ -17,6 +17,26 @@ app.get ('/', (req, res) => {
     res.sendFile (path.resolve(__dirname, './client/build', 'index'))
 })
 
+app.use(express.static(path.resolve(__dirname, './client/build/acerca-de/nosotros')))
+app.get ('/acerca-de/nosotros', (req, res) => {
+    res.sendFile (path.resolve(__dirname, './client/build/acerca-de/nosotros', 'index'))
+})
+
+app.use(express.static(path.resolve(__dirname, './client/build/acerca-de/equipo')))
+app.get ('/acerca-de/nuestro-equipo', (req, res) => {
+    res.sendFile (path.resolve(__dirname, './client/build/acerca-de/equipo', 'index'))
+})
+
+app.use(express.static(path.resolve(__dirname, './client/build/nuestra-tienda')))
+app.get ('/nuestra-tienda', (req, res) => {
+    res.sendFile (path.resolve(__dirname, './client/build/nuestra-tienda', 'index'))
+})
+
+app.use(express.static(path.resolve(__dirname, './client/build/producto')))
+app.get ('/producto/:sku', (req, res) => {
+    res.sendFile (path.resolve(__dirname, './client/build/producto', 'index'))
+})
+
 app.listen (app.get('port'), () => {
     console.log ('Servidor en puerto ', app.get ('port'))
 })
