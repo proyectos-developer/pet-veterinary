@@ -6,7 +6,7 @@ import home_foto_02 from '../../assets/images/home_foto_960.png'
 
 import image_huellas_digitales from '../../assets/images/image_huellas_digitales_480.png'
 
-import SliderBody from './sliderbody.jsx'
+import SliderBodyCell from './sliderbodycell.jsx'
 
 export default function NosotrosOcasionCell({proporcional}) {
 
@@ -19,7 +19,7 @@ export default function NosotrosOcasionCell({proporcional}) {
             </div>
 
             <div className='' style={{width: '100%', height: 400 / proporcional}}>
-                <SliderBody proporcional={proporcional}/>
+                <SliderBodyCell proporcional={proporcional}/>
             </div>
 
 

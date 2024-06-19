@@ -1,6 +1,6 @@
 import React from 'react'
 
-import image_nosotros from '../../../assets/images/image_nosotros_1920.png'
+import image_nosotros from '../../../assets/images/image_nosotros_991.png'
 
 export default function ImageTituloTablet({proporcional}) {
 
