@@ -196,13 +196,13 @@ export default function MenuSuperior({proporcional}) {
                     <div style={{width: '22.5%', height: 60 / proporcional}}>
                         <div className='d-flex justify-content-end' style={{width: '100%', height: 60 / proporcional}}>
                             <img src={icono_search} style={{width: 32 / proporcional, height: 32 / proporcional, margin: 14 / proporcional,
-                                    cursos: 'pointer'}}/>
+                                    cursor: 'pointer'}}/>
                             <img src={icono_heart} style={{width: 32 / proporcional, height: 32 / proporcional, margin: 14 / proporcional,
-                                    cursos: 'pointer'}}/>
+                                    cursor: 'pointer'}}/>
                             <img src={icono_shop} style={{width: 32 / proporcional, height: 32 / proporcional, margin: 14 / proporcional,
-                                    cursos: 'pointer'}}/>
+                                    cursor: 'pointer'}}/>
                             <img src={icono_menu} style={{width: 32 / proporcional, height: 32 / proporcional, margin: 14 / proporcional,
-                                    marginRight: 0, cursos: 'pointer'}}/>
+                                    marginRight: 0, cursor: 'pointer'}}/>
                         </div>
                     </div>
                 </div>

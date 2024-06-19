@@ -1,12 +1,14 @@
 import React from 'react'
 
-import ImageTitulo from './imagetitulo.jsx'
+import ImageTituloTablet from './imagetitulotablet.jsx'
+import TiendaTablet from './tiendatablet.jsx'
 
 export default function NuestraTiendaPanelTablet({proporcional}) {
 
     return (
         <div style={{width: '100%', height: 'auto'}}>
-            <ImageTitulo proporcional={proporcional}/>
+            <ImageTituloTablet proporcional={proporcional}/>
+            <TiendaTablet proporcional={proporcional}/>
         </div>
     )
 }

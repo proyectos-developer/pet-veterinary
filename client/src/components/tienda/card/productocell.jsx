@@ -10,7 +10,7 @@ import icono_heart_white from '../../../assets/iconos/icono_heart_white_96.png'
 import icono_view_white from '../../../assets/iconos/icono_view_white_96.png'
 import { useNavigate } from 'react-router-dom'
 
-export default function CardProducto({proporcional, opcion}) {
+export default function CardProductoCell({proporcional, opcion}) {
 
     const navigate = useNavigate()
 
@@ -64,8 +64,8 @@ export default function CardProducto({proporcional, opcion}) {
                                             style={{width: 32 / proporcional, height: 32 / proporcional, padding: boton_view ? 6 / proporcional : 0,
                                                 cursor: 'pointer', background: boton_view ? 'red' : 'transparent',
                                                 borderTopRightRadius: 8 / proporcional, borderTopLeftRadius: 8 / proporcional}}
-                                                onMouseOver={() => setBotonView(true)} onMouseLeave={() => setBotonView(false)}
-                                                onClick={() =>{navigate ('/producto/producto'); window.scrollTo(0, 0)}}/>
+                                                onClick={() => {navigate ('/producto/producto'); window.scrollTo(0, 0)}}
+                                                onMouseOver={() => setBotonView(true)} onMouseLeave={() => setBotonView(false)}/>
                                     </div>
                                 </div>
                             ) : null
