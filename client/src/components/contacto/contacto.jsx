@@ -73,7 +73,8 @@ export default function Contacto({proporcional}) {
                                 placeholder='Su mensaje'
                             />
                             <div className='rounded' style={{width: 200 / proporcional, height: 60 / proporcional, background: boton_enviar ? 'transparent' : 'white', border: '1px solid white'}}
-                                onMouseOver={() => setBotonEnviar(true)} onMouseLeave={() => setBotonEnviar(false)}>
+                                onMouseOver={() => setBotonEnviar(true)} onMouseLeave={() => setBotonEnviar(false)}
+                                onClick={() => enviar_mensaje()}>
                                 <p style={{fontSize: 20 / proporcional, fontWeight: 400, color: boton_enviar ? 'white' : 'rgb(240, 67, 54)', fontFamily: 'Nunito, sans-serif', lineHeight: `${60 / proporcional}px`,
                                     marginBottom: 0 / proporcional, textAlign: 'center', cursor: 'pointer'}}>
                                     Contactárnos
