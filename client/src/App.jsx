@@ -35,6 +35,10 @@ import PostPanel from './components/post/panel.jsx'
 import PostPanelTablet from './components/post/paneltablet.jsx'
 import PostPanelCell from './components/post/panelcell.jsx'
 
+import ContactoPanel from './components/contacto/panel.jsx'
+import ContactoPanelTablet from './components/contacto/paneltablet.jsx'
+import ContactoPanelCell from './components/contacto/panelcell.jsx'
+
 export default function App() {
 
   const [width, setWidth] = useState(window.outerWidth)
@@ -85,6 +89,10 @@ export default function App() {
                     <Route path='nuestro-blog/:blog' element={width < 500 ? <PostPanelCell proporcional={499 / width}/> :
                                                               width < 991 ? <PostPanelTablet proporcional={991 / width}/> :
                                                                             <PostPanel proporcional={1920 / width}/>}/>
+
+                    <Route path='contactanos' element={width < 500 ? <ContactoPanelCell proporcional={499 / width}/> :
+                                                       width < 991 ? <ContactoPanelTablet proporcional={991 / width}/> :
+                                                                     <ContactoPanel proporcional={1920 / width}/>}/>
                                                 
                 </Route>
           </Routes>
