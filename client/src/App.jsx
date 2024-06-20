@@ -27,6 +27,14 @@ import ProductoPanel from './components/producto/panel.jsx'
 import ProductoPanelTablet from './components/producto/paneltablet.jsx'
 import ProductoPanelCell from './components/producto/panelcell.jsx'
 
+import BlogPanel from './components/blog/panel.jsx'
+import BlogPanelTablet from './components/blog/paneltablet.jsx'
+import BlogPanelCell from './components/blog/panelcell.jsx'
+
+import PostPanel from './components/post/panel.jsx'
+import PostPanelTablet from './components/post/paneltablet.jsx'
+import PostPanelCell from './components/post/panelcell.jsx'
+
 export default function App() {
 
   const [width, setWidth] = useState(window.outerWidth)
@@ -69,6 +77,14 @@ export default function App() {
                     <Route path='producto/:sku' element={width < 500 ? <ProductoPanelCell proporcional={499 / width}/> :
                                                          width < 991 ? <ProductoPanelTablet proporcional={991 / width}/> :
                                                                        <ProductoPanel proporcional={1920 / width}/>}/>
+                            
+                    <Route path='nuestro-blog' element={width < 500 ? <BlogPanelCell proporcional={499 / width}/> :
+                                                        width < 991 ? <BlogPanelTablet proporcional={991 / width}/> :
+                                                                      <BlogPanel proporcional={1920 / width}/>}/>
+                            
+                    <Route path='nuestro-blog/:blog' element={width < 500 ? <PostPanelCell proporcional={499 / width}/> :
+                                                              width < 991 ? <PostPanelTablet proporcional={991 / width}/> :
+                                                                            <PostPanel proporcional={1920 / width}/>}/>
                                                 
                 </Route>
           </Routes>

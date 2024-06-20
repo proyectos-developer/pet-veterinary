@@ -6,7 +6,7 @@ import icono_tiktok from '../../assets/iconos/icono_tiktok_red_96.png'
 
 import CardProductoRelacionadoCell from './card/productorelacionadocell.jsx'
 
-export default function FiltrosTiendaTablet({proporcional}) {
+export default function FiltrosTiendaCell({proporcional}) {
 
     const [seleccion_tag, setSeleccionTag] = useState('')
     
